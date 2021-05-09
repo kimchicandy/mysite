@@ -1,21 +1,27 @@
 {
   "articles": [
     {
-      "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "path": "blog.html",
+      "title": "Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-10T01:30:54+09:00"
+      "last_modified": "2021-05-09T23:28:52+09:00"
     },
     {
       "path": "index.html",
-      "title": "My Website",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "title": "sangrae noe",
+      "description": "Index.RMD file...\n",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-10T01:30:54+09:00"
+      "contents": "\r\n\r\n          \r\n          \r\n          \r\n          \r\n          sangrae noe\r\n          \r\n          \r\n          About\r\n          Blog\r\n          Portfolio\r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            sangrae noe\r\n          \r\n          \r\n            \r\n              \r\n              About me:\r\n              \r\n              \r\n              Education :\r\n              \r\n            \r\n            \r\n              \r\n              About me:\r\n              \r\n              \r\n              Education :\r\n              \r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n                  \r\n                    \r\n                      LinkedIn\r\n                    \r\n                  \r\n                \r\n                                \r\n                  \r\n                    \r\n                      GitHub\r\n                    \r\n                  \r\n                \r\n                              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                                \r\n                  \r\n                    LinkedIn\r\n                  \r\n                \r\n                                \r\n                  \r\n                    GitHub\r\n                  \r\n                \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
+      "last_modified": "2021-05-09T23:28:52+09:00"
+    },
+    {
+      "path": "Portfolio.html",
+      "title": "Portfolio",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n\r\ntitle\r\n\r\n\r\ntext\r\n\r\ntext2.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-05-09T23:28:55+09:00"
     }
   ],
-  "collections": []
+  "collections": ["posts/posts.json"]
 }

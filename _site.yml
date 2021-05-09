@@ -1,12 +1,29 @@
-name: "mysite"
-title: "My Website"
+name: "website"
+title: "sangrae noe"
 description: |
-  My Website
+  My R ponderings
 output_dir: "_site"
+base_url: https://kimchicandy.netlify.app/
+google_analytics: "271705262"
 navbar:
+  logo:
+    image: logo-psychology.png
   right:
-    - text: "Home"
-      href: index.html
     - text: "About"
-      href: about.html
+      href: index.html
+    - text: "Blog"
+      href: blog.html
+    - text: "Portfolio"
+      href: portfolio.html      
+    - icon: fa fa-github
+      href: http://github.com/kimchicandy
+    - icon: fa fa-linkedin
+      href: https://www.linkedin.com/in/%EC%83%81%EB%9E%98-%EB%85%B8-83b7b8a3/
+collections:
+  posts:
+    categories: true
+    categories_metadata: true
+    authors_metadata: false
+    share: [twitter, linkedin]  
 output: distill::distill_article
+theme: my_theme.css

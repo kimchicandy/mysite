@@ -1,0 +1,24 @@
+---
+title: "title test2"
+description: |
+  test2
+author:
+  - name: sangrae noe
+    url: https://www.linkedin.com/in/%EC%83%81%EB%9E%98-%EB%85%B8-83b7b8a3/
+base_url: https://kimchicadny.netlify.app
+date: 05-09-2021
+preview: distill.png
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - computational art
+  - presentation
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Here is where I will talk about building this website.
