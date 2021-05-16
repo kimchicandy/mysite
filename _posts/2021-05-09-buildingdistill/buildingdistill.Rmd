@@ -1,5 +1,5 @@
 ---
-title: "Building a {distill} website"
+title: "Building a {disstill} website"
 description: |
   How I built this site using {distill}
 author:
