@@ -1,10 +1,10 @@
 name: "website"
 title: "sangrae noe"
 description: |
-  My R ponderings
+  Perna
 output_dir: "_site"
 base_url: https://kimchicandy.netlify.app/
-google_analytics: "271705262"
+
 navbar:
   logo:
     image: logo-psychology.png
@@ -13,8 +13,18 @@ navbar:
       href: index.html
     - text: "Blog"
       href: blog.html
+    - text: "Quantify-me"
+      menu:
+        - text: "Every little helps"
+          href: habit.html
+        - text: "---"
+        - text: "Exercise`s diary"
+          href: exercise.html
+        - text: "---"
+        - text: "Spending`s diary"
+          href: spending.html
     - text: "Portfolio"
-      href: portfolio.html      
+      href: portfolio.html
     - icon: fa fa-github
       href: http://github.com/kimchicandy
     - icon: fa fa-linkedin
@@ -24,6 +34,15 @@ collections:
     categories: true
     categories_metadata: true
     authors_metadata: false
-    share: [twitter, linkedin]  
-output: distill::distill_article
+    share: [twitter, linkedin, facebook]  
+output: 
+  distill::distill_article:
+    includes:
+      in_header: utterances.html
+    highlight: tango
+    highlight_downlit: true
+    css: my_theme.css
+    toc: true
+    fig_caption: true 
 theme: my_theme.css
+google_analytics: "UA-197108543-1"

@@ -1,0 +1,2848 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+  <!--radix_placeholder_meta_tags-->
+  <title>sangrae noe: exercise</title>
+
+  <meta property="description" itemprop="description" content="A new article created using the Distill format."/>
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2021-05-17"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-05-17"/>
+  <meta name="article:author" content="Nora Jones"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="sangrae noe: exercise"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="A new article created using the Distill format."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="sangrae noe"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="sangrae noe: exercise"/>
+  <meta property="twitter:description" content="A new article created using the Distill format."/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["exercise"]},{"type":"character","attributes":{},"value":["A new article created using the Distill format.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Nora Jones"]},{"type":"character","attributes":{},"value":["https://example.com/norajones"]},{"type":"character","attributes":{},"value":["Spacely Sprockets"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]}]}]},{"type":"character","attributes":{},"value":["2021-05-17"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[4]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  <!--radix_placeholder_navigation_in_header-->
+  <meta name="distill:offset" content=""/>
+
+  <script type="application/javascript">
+
+    window.headroom_prevent_pin = false;
+
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+
+      // initialize headroom for banner
+      var header = $('header').get(0);
+      var headerHeight = header.offsetHeight;
+      var headroom = new Headroom(header, {
+        tolerance: 5,
+        onPin : function() {
+          if (window.headroom_prevent_pin) {
+            window.headroom_prevent_pin = false;
+            headroom.unpin();
+          }
+        }
+      });
+      headroom.init();
+      if(window.location.hash)
+        headroom.unpin();
+      $(header).addClass('headroom--transition');
+
+      // offset scroll location for banner on hash change
+      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+      window.addEventListener("hashchange", function(event) {
+        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+      });
+
+      // responsive menu
+      $('.distill-site-header').each(function(i, val) {
+        var topnav = $(this);
+        var toggle = topnav.find('.nav-toggle');
+        toggle.on('click', function() {
+          topnav.toggleClass('responsive');
+        });
+      });
+
+      // nav dropdowns
+      $('.nav-dropbtn').click(function(e) {
+        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+        $(this).parent().siblings('.nav-dropdown')
+           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $("body").click(function(e){
+        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $(".nav-dropdown").click(function(e){
+        e.stopPropagation();
+      });
+    });
+  </script>
+
+  <style type="text/css">
+
+  /* Theme (user-documented overrideables for nav appearance) */
+
+  .distill-site-nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #0F2E3D;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .distill-site-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .distill-site-nav a:hover {
+    color: white;
+  }
+
+  @media print {
+    .distill-site-nav {
+      display: none;
+    }
+  }
+
+  .distill-site-header {
+
+  }
+
+  .distill-site-footer {
+
+  }
+
+
+  /* Site Header */
+
+  .distill-site-header {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+
+  .distill-site-header .nav-left {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header .nav-left {
+      margin-left: 0;
+    }
+  }
+
+
+  .distill-site-header .nav-right {
+    float: right;
+    margin-right: 8px;
+  }
+
+  .distill-site-header a,
+  .distill-site-header .title {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 10px 14px 10px;
+  }
+
+  .distill-site-header .title {
+    font-size: 18px;
+    min-width: 150px;
+  }
+
+  .distill-site-header .logo {
+    padding: 0;
+  }
+
+  .distill-site-header .logo img {
+    display: none;
+    max-height: 20px;
+    width: auto;
+    margin-bottom: -4px;
+  }
+
+  .distill-site-header .nav-image img {
+    max-height: 18px;
+    width: auto;
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+
+
+
+  @media screen and (min-width: 1000px) {
+    .distill-site-header .logo img {
+      display: inline-block;
+    }
+    .distill-site-header .nav-left {
+      margin-left: 20px;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 20px;
+    }
+    .distill-site-header .title {
+      padding-left: 12px;
+    }
+  }
+
+
+  .distill-site-header .nav-toggle {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 10px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    margin-top: 1px;
+    z-index: 2;
+  }
+
+  .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    margin-top: 2px;
+    white-space: nowrap;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .nav-dropdown-content hr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-dropdown-active {
+    display: block;
+  }
+
+  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+    color: black;
+    padding: 6px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-dropdown-content .nav-dropdown-header {
+    display: block;
+    padding: 5px 24px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999999;
+    white-space: nowrap;
+  }
+
+  .nav-dropdown:hover .nav-dropbtn {
+    color: white;
+  }
+
+  .nav-dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .nav-right .nav-dropdown-content {
+    margin-left: -45%;
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+    .distill-site-header a.nav-toggle {
+      float: right;
+      display: block;
+    }
+    .distill-site-header .title {
+      margin-left: 0;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 0;
+    }
+    .distill-site-header {
+      overflow: hidden;
+    }
+    .nav-right .nav-dropdown-content {
+      margin-left: 0;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header.responsive {position: relative; min-height: 500px; }
+    .distill-site-header.responsive a.nav-toggle {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .distill-site-header.responsive a,
+    .distill-site-header.responsive .nav-dropdown {
+      display: block;
+      text-align: left;
+    }
+    .distill-site-header.responsive .nav-left,
+    .distill-site-header.responsive .nav-right {
+      width: 100%;
+    }
+    .distill-site-header.responsive .nav-dropdown {float: none;}
+    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  /* Site Footer */
+
+  .distill-site-footer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 3;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  /* Headroom */
+
+  d-title {
+    padding-top: 6rem;
+  }
+
+  @media print {
+    d-title {
+      padding-top: 4rem;
+    }
+  }
+
+  .headroom {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .headroom--transition {
+    transition: all .4s ease-in-out;
+  }
+
+  .headroom--unpinned {
+    top: -100px;
+  }
+
+  .headroom--pinned {
+    top: 0;
+  }
+
+  /* adjust viewport for navbar height */
+  /* helps vertically center bootstrap (non-distill) content */
+  .min-vh-100 {
+    min-height: calc(100vh - 100px) !important;
+  }
+
+  </style>
+
+  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+  <script type="application/javascript">
+
+  function getMeta(metaName) {
+    var metas = document.getElementsByTagName('meta');
+    for (let i = 0; i < metas.length; i++) {
+      if (metas[i].getAttribute('name') === metaName) {
+        return metas[i].getAttribute('content');
+      }
+    }
+    return '';
+  }
+
+  function offsetURL(url) {
+    var offset = getMeta('distill:offset');
+    return offset ? offset + '/' + url : url;
+  }
+
+  function createFuseIndex() {
+
+    // create fuse index
+    var options = {
+      keys: [
+        { name: 'title', weight: 20 },
+        { name: 'categories', weight: 15 },
+        { name: 'description', weight: 10 },
+        { name: 'contents', weight: 5 },
+      ],
+      ignoreLocation: true,
+      threshold: 0
+    };
+    var fuse = new window.Fuse([], options);
+
+    // fetch the main search.json
+    return fetch(offsetURL('search.json'))
+      .then(function(response) {
+        if (response.status == 200) {
+          return response.json().then(function(json) {
+            // index main articles
+            json.articles.forEach(function(article) {
+              fuse.add(article);
+            });
+            // download collections and index their articles
+            return Promise.all(json.collections.map(function(collection) {
+              return fetch(offsetURL(collection)).then(function(response) {
+                if (response.status === 200) {
+                  return response.json().then(function(articles) {
+                    articles.forEach(function(article) {
+                      fuse.add(article);
+                    });
+                  })
+                } else {
+                  return Promise.reject(
+                    new Error('Unexpected status from search index request: ' +
+                              response.status)
+                  );
+                }
+              });
+            })).then(function() {
+              return fuse;
+            });
+          });
+
+        } else {
+          return Promise.reject(
+            new Error('Unexpected status from search index request: ' +
+                        response.status)
+          );
+        }
+      });
+  }
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // get search element (bail if we don't have one)
+    var searchEl = window.document.getElementById('distill-search');
+    if (!searchEl)
+      return;
+
+    createFuseIndex()
+      .then(function(fuse) {
+
+        // make search box visible
+        searchEl.classList.remove('hidden');
+
+        // initialize autocomplete
+        var options = {
+          autoselect: true,
+          hint: false,
+          minLength: 2,
+        };
+        window.autocomplete(searchEl, options, [{
+          source: function(query, callback) {
+            const searchOptions = {
+              isCaseSensitive: false,
+              shouldSort: true,
+              minMatchCharLength: 2,
+              limit: 10,
+            };
+            var results = fuse.search(query, searchOptions);
+            callback(results
+              .map(function(result) { return result.item; })
+            );
+          },
+          templates: {
+            suggestion: function(suggestion) {
+              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+                : '';
+              var html = `
+                <div class="search-item">
+                  <h3>${suggestion.title}</h3>
+                  <div class="search-item-description">
+                    ${suggestion.description || ''}
+                  </div>
+                  <div class="search-item-preview">
+                    ${img}
+                  </div>
+                </div>
+              `;
+              return html;
+            }
+          }
+        }]).on('autocomplete:selected', function(event, suggestion) {
+          window.location.href = offsetURL(suggestion.path);
+        });
+        // remove inline display style on autocompleter (we want to
+        // manage responsive display via css)
+        $('.algolia-autocomplete').css("display", "");
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+  });
+
+  </script>
+
+  <style type="text/css">
+
+  .nav-search {
+    font-size: x-small;
+  }
+
+  /* Algolioa Autocomplete */
+
+  .algolia-autocomplete {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: sub;
+    background-color: white;
+    color: black;
+    padding: 6px;
+    padding-top: 8px;
+    padding-bottom: 0;
+    border-radius: 6px;
+    border: 1px #0F2E3D solid;
+    width: 180px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-nav .algolia-autocomplete {
+      display: none;
+      visibility: hidden;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete {
+      display: inline-block;
+      visibility: visible;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+      margin-left: 0;
+      width: 400px;
+      max-height: 400px;
+    }
+  }
+
+  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+    width: 90%;
+    outline: none;
+    border: none;
+  }
+
+  .algolia-autocomplete .aa-hint {
+    color: #999;
+  }
+  .algolia-autocomplete .aa-dropdown-menu {
+    width: 550px;
+    max-height: 70vh;
+    overflow-x: visible;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: -150px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #999;
+    border-top: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+    cursor: pointer;
+    padding: 5px 4px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+    border-bottom: none;
+    margin-bottom: 2px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+    overflow: hidden;
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+    font-size: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 5px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+    display: inline-block;
+    overflow: hidden;
+    height: 2.8em;
+    width: 80%;
+    margin-right: 4%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+    display: inline-block;
+    width: 15%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+    height: 3em;
+    width: auto;
+    display: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+    display: initial;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+    background-color: #eee;
+  }
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  </style>
+
+
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <style type="text/css">
+  /* base variables */
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+
+
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #000000;
+    --header-color:    rgba(0, 0, 0, 0.8);
+    --body-color:      rgba(0, 0, 0, 0.8);
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    sans-serif;
+    --mono-font:       monospace;
+    --body-font:       sans-serif;
+    --navbar-font:     sans-serif;  /* websites + blogs only */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }
+
+  .distill-site-footer {
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }
+
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below                      */
+  </style>
+  <style type="text/css">
+  /* base variables */
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+  @import url('https://fonts.googleapis.com/css2?family=Cardo');
+  @import url('https://fonts.googleapis.com/css2?family=Alata');
+
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #000000;
+    --header-color:    rgba(0, 0, 0, 0.8);
+    --body-color:      rgba(0, 0, 0, 0.8);
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    'Alata', sans-serif;
+    --mono-font:       monospace;
+    --body-font:       'Cardo', serif;
+    --navbar-font:     'Alata', sans-serif;  /* websites + blogs only */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       white;
+    --text-size:        15px;
+    --hover-color:      #89ac81;
+    --bkgd-color:       #000;
+  }
+
+  .distill-site-footer {
+    --text-color:       white;
+    --text-size:        15px;
+    --hover-color:      #89ac81;
+    --bkgd-color:       #000;
+  }
+
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below */
+  .pull-left {
+    float: left;
+    width: 47%;
+  }
+
+  .pull-right {
+    float: right;
+    width: 47%;
+  }
+
+  .card {
+      color: #474747;
+      background-color: #FFFFFF;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 10px; 
+      margin: 16px 16px;
+      text-decoration: none;
+  }
+
+  .card-body {
+    padding: 2px 16px;
+  }
+
+  .card-img {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+  }
+
+  .card-footer {
+    background-color: #000;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+  }</style>
+  <style type="text/css">
+  /* base style */
+
+  /* FONT FAMILIES */
+
+  :root {
+    --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body,
+  .posts-list .post-preview p,
+  .posts-list .description p {
+    font-family: var(--body-font), var(--body-default);
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .posts-list .post-preview h2,
+  .posts-list .description h2 {
+    font-family: var(--heading-font), var(--heading-default);
+  }
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: var(--mono-font), var(--mono-default);
+  }
+
+
+  /*-- TITLE --*/
+  d-title h1,
+  .posts-list > h1 {
+    color: var(--title-color, black);
+  }
+
+  d-title h1 {
+    font-size: var(--title-size, 50px);
+  }
+
+  /*-- HEADERS --*/
+  d-article h1,
+  d-article h2,
+  d-article h3,
+  d-article h4,
+  d-article h5,
+  d-article h6 {
+    color: var(--header-color, rgba(0, 0, 0, 0.8));
+  }
+
+  /*-- BODY --*/
+  d-article > p,  /* only text inside of <p> tags */
+  d-article > ul, /* lists */
+  d-article > ol {
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+    font-size: var(--body-size, 1.06rem);
+  }
+
+
+  /*-- CODE --*/
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-size: var(--code-size, 14px);
+  }
+
+  /*-- ASIDE --*/
+  d-article aside {
+    font-size: var(--aside-size, 12px);
+    color: var(--aside-color, rgba(0, 0, 0, 0.6));
+  }
+
+  /*-- FIGURE CAPTIONS --*/
+  figure .caption,
+  figure figcaption,
+  .figure .caption {
+    font-size: var(--fig-cap-size, 13px);
+    color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+  }
+
+  /*-- METADATA --*/
+  d-byline h3 {
+    font-size: var(--heading-size, 0.6rem);
+    color: var(--heading-color, rgba(0, 0, 0, 0.5));
+  }
+
+  d-byline {
+    font-size: var(--body-size, 0.8rem);
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+  }
+
+  d-byline a,
+  d-article d-byline a {
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+  }
+
+  /*-- TABLE OF CONTENTS --*/
+  .d-contents nav h3 {
+    font-size: var(--heading-size, 18px);
+  }
+
+  .d-contents nav a {
+    font-size: var(--contents-size, 13px);
+  }
+
+  /*-- APPENDIX --*/
+  d-appendix h3 {
+    font-size: var(--heading-size, 15px);
+    color: var(--heading-color, rgba(0, 0, 0, 0.65));
+  }
+
+  d-appendix {
+    font-size: var(--text-size, 0.8em);
+    color: var(--text-color, rgba(0, 0, 0, 0.5));
+  }
+
+  d-appendix d-footnote-list a.footnote-backlink {
+    color: var(--text-color, rgba(0, 0, 0, 0.5));
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  .distill-site-header .title {
+    font-size: var(--title-size, 18px);
+    font-family: var(--navbar-font), var(--heading-default);
+  }
+
+  .distill-site-header a,
+  .nav-dropdown .nav-dropbtn {
+    font-family: var(--navbar-font), var(--heading-default);
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    font-size: var(--text-size, 15px);
+  }
+
+  .distill-site-header a:hover,
+  .nav-dropdown:hover .nav-dropbtn {
+    color: var(--hover-color, white);
+  }
+
+  .distill-site-header {
+    font-size: var(--text-size, 15px);
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    background-color: var(--bkgd-color, #0F2E3D);
+  }
+
+  .distill-site-footer {
+    font-size: var(--text-size, 15px);
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    background-color: var(--bkgd-color, #0F2E3D);
+  }
+
+  .distill-site-footer a:hover {
+    color: var(--hover-color, white);
+  }</style>
+  <!--/radix_placeholder_distill-->
+  <script src="site_libs/header-attrs-2.8.1/header-attrs.js"></script>
+  <script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="site_libs/echarts4r-4.8.0/echarts-en.min.js"></script>
+  <script src="site_libs/echarts4r-4.8.0/ecStat.min.js"></script>
+  <script src="site_libs/echarts4r-4.8.0/dataTool.min.js"></script>
+  <script src="site_libs/echarts4r-binding-0.4.0/echarts4r.js"></script>
+  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!/posts/.test(location.pathname)) {
+        return;
+      }
+
+      var script = document.createElement("script");
+      script.src = "https://utteranc.es/client.js";
+      script.setAttribute("repo", "sciencificity/Blog_Vebash");
+      script.setAttribute("issue-term", "title");
+      script.setAttribute("crossorigin", "anonymous");
+      script.setAttribute("label", "comments <f0>윊<ac>");
+      script.setAttribute("theme", "github-light");
+
+      /* wait for article to load, append script to article element */
+      var observer = new MutationObserver(function (mutations, observer) {
+        var article = document.querySelector("d-article");
+        if (article) {
+          observer.disconnect();
+          /* HACK: article scroll */
+          article.setAttribute("style", "overflow-y: hidden");
+          article.appendChild(script);
+        }
+      });
+
+      observer.observe(document.body, { childList: true });
+    });
+  </script>
+
+  <!-- <script src="https://utteranc.es/client.js" -->
+  <!--         repo="sciencificity/Blog_Vebash" -->
+  <!--         issue-term="title" -->
+  <!--         label="comments <f0>윊<ac>" -->
+  <!--         theme="github-light" -->
+  <!--         crossorigin="anonymous" -->
+  <!--         async> -->
+  <!-- </script> -->
+  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-197108543-1"></script>
+  <script type="text/javascript" cookie-consent="tracking">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-197108543-1');
+  </script>
+  <style type="text/css">
+
+  /* base variables */
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+  @import url('https://fonts.googleapis.com/css2?family=Cardo');
+  @import url('https://fonts.googleapis.com/css2?family=Alata');
+
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #000000;
+    --header-color:    rgba(0, 0, 0, 0.8);
+    --body-color:      rgba(0, 0, 0, 0.8);
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    'Alata', sans-serif;
+    --mono-font:       monospace;
+    --body-font:       'Cardo', serif;
+    --navbar-font:     'Alata', sans-serif;  /* websites + blogs only */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       white;
+    --text-size:        15px;
+    --hover-color:      #89ac81;
+    --bkgd-color:       #000;
+  }
+
+  .distill-site-footer {
+    --text-color:       white;
+    --text-size:        15px;
+    --hover-color:      #89ac81;
+    --bkgd-color:       #000;
+  }
+
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below */
+  .pull-left {
+    float: left;
+    width: 47%;
+  }
+
+  .pull-right {
+    float: right;
+    width: 47%;
+  }
+
+  .card {
+      color: #474747;
+      background-color: #FFFFFF;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 10px; 
+      margin: 16px 16px;
+      text-decoration: none;
+  }
+
+  .card-body {
+    padding: 2px 16px;
+  }
+
+  .card-img {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+  }
+
+  .card-footer {
+    background-color: #000;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+  }
+  </style>
+  <!--/radix_placeholder_site_in_header-->
+
+  <link rel="stylesheet" href="my_theme.css" type="text/css"/>
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"exercise","description":"A new article created using the Distill format.","authors":[{"author":"Nora Jones","authorURL":"https://example.com/norajones","affiliation":"Spacely Sprockets","affiliationURL":"https://example.com/spacelysprokets","orcidID":""}],"publishedDate":"2021-05-17T00:00:00.000+09:00","citationText":"Jones, 2021"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a class="logo">
+<img src="logo-psychology.png" alt="Logo"/>
+</a>
+<a href="index.html" class="title">sangrae noe</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+</div>
+<div class="nav-right">
+<a href="index.html">About</a>
+<a href="blog.html">Blog</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+Quantify-me
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="habit.html">Every little helps</a>
+<hr/>
+<a href="exercise.html">Exercise`s diary</a>
+<hr/>
+<a href="spending.html">Spending`s diary</a>
+</div>
+</div>
+<a href="portfolio.html">Portfolio</a>
+<a href="http://github.com/kimchicandy">
+<i class="fa fa-github" aria-hidden="true"></i>
+</a>
+<a href="https://www.linkedin.com/in/%EC%83%81%EB%9E%98-%EB%85%B8-83b7b8a3/">
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>exercise</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>A new article created using the Distill format.</p></p>
+</div>
+
+<div class="d-byline">
+  Nora Jones <a href="https://example.com/norajones" class="uri">https://example.com/norajones</a> (Spacely Sprockets)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
+  
+<br/>2021-05-17
+</div>
+
+<div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#in-tracking">In tracking</a></li>
+<li><a href="#in-my-opinion">In my opinion</a>
+<ul>
+<li><a href="#section">2021</a>
+<ul>
+<li><a href="#january">January</a>
+<ul>
+<li><a href="#week">01 week</a></li>
+<li><a href="#week-1">02 week</a></li>
+<li><a href="#week-2">03 week</a></li>
+<li><a href="#week-3">04 week</a></li>
+</ul></li>
+<li><a href="#february">February</a>
+<ul>
+<li><a href="#week-4">05 week</a></li>
+<li><a href="#week-5">06 week</a></li>
+<li><a href="#week-6">07 week</a></li>
+<li><a href="#week-7">08 week</a></li>
+<li><a href="#week-8">09 week</a></li>
+</ul></li>
+<li><a href="#march">March</a>
+<ul>
+<li><a href="#week-9">10 week</a></li>
+<li><a href="#week-10">11 week</a></li>
+<li><a href="#week-11">12 week</a></li>
+<li><a href="#week-12">13 week</a></li>
+</ul></li>
+<li><a href="#april">April</a>
+<ul>
+<li><a href="#week-13">14 week</a></li>
+<li><a href="#week-14">15 week</a></li>
+<li><a href="#week-15">16 week</a></li>
+<li><a href="#week-16">17 week</a></li>
+</ul></li>
+<li><a href="#may">May</a>
+<ul>
+<li><a href="#week-17">18 week</a></li>
+<li><a href="#week-18">19 week</a></li>
+<li><a href="#week-19">20 week</a></li>
+<li><a href="#week-20">21 week</a></li>
+</ul></li>
+<li><a href="#june">June</a>
+<ul>
+<li><a href="#week-21">22 week</a></li>
+<li><a href="#week-22">23 week</a></li>
+<li><a href="#week-23">24 week</a></li>
+<li><a href="#week-24">25 week</a></li>
+<li><a href="#week-25">26 week</a></li>
+</ul></li>
+<li><a href="#july">July</a>
+<ul>
+<li><a href="#week-26">27 week</a></li>
+<li><a href="#week-27">28 week</a></li>
+<li><a href="#week-28">29 week</a></li>
+<li><a href="#week-29">30 week</a></li>
+</ul></li>
+<li><a href="#august">August</a>
+<ul>
+<li><a href="#week-30">31 week</a></li>
+<li><a href="#week-31">32 week</a></li>
+<li><a href="#week-32">33 week</a></li>
+<li><a href="#week-33">34 week</a></li>
+<li><a href="#week-34">35 week</a></li>
+</ul></li>
+<li><a href="#september">September</a>
+<ul>
+<li><a href="#week-35">36 week</a></li>
+<li><a href="#week-36">37 week</a></li>
+<li><a href="#week-37">38 week</a></li>
+<li><a href="#week-38">39 week</a></li>
+</ul></li>
+<li><a href="#october">October</a>
+<ul>
+<li><a href="#week-39">40 week</a></li>
+<li><a href="#week-40">41 week</a></li>
+<li><a href="#week-41">42 week</a></li>
+<li><a href="#week-42">43 week</a></li>
+<li><a href="#week-43">44 week</a></li>
+</ul></li>
+<li><a href="#november">November</a>
+<ul>
+<li><a href="#week-44">45 week</a></li>
+<li><a href="#week-45">46 week</a></li>
+<li><a href="#week-46">47 week</a></li>
+<li><a href="#week-47">48 week</a></li>
+</ul></li>
+<li><a href="#december">December</a>
+<ul>
+<li><a href="#week-48">49 week</a></li>
+<li><a href="#week-49">50 week</a></li>
+<li><a href="#week-50">51 week</a></li>
+<li><a href="#week-51">52 week</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<style type="text/css">
+d-article h2 {
+  font-family: Rubik;
+  font-size: 3em;
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+d-article h3 {
+  font-size: 1.5em;
+  text-align: center;
+  font-variant: small-caps;
+  font-family: Bitter;
+  letter-spacing: .2em;
+}
+li::marker {
+    font-size: 1.2em;
+}
+</style>
+</div>
+<h1 id="in-tracking">In tracking</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-0b78a792866f516fb7b3" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0b78a792866f516fb7b3">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"calendar":[{"range":"2018"}],"series":[{"data":[{"value":["2017-01-01"," 4.7085989"]},{"value":["2017-01-02","13.0340680"]},{"value":["2017-01-03"," 2.6499136"]},{"value":["2017-01-04","26.6591590"]},{"value":["2017-01-05","24.3399746"]},{"value":["2017-01-06","12.6803120"]},{"value":["2017-01-07","14.8877257"]},{"value":["2017-01-08","17.5157840"]},{"value":["2017-01-09","22.5382417"]},{"value":["2017-01-10","22.5927272"]},{"value":["2017-01-11","17.2235107"]},{"value":["2017-01-12","23.1793470"]},{"value":["2017-01-13","18.8741969"]},{"value":["2017-01-14","12.4230562"]},{"value":["2017-01-15","14.4309807"]},{"value":["2017-01-16","21.3006930"]},{"value":["2017-01-17","25.1774593"]},{"value":["2017-01-18","15.1718075"]},{"value":["2017-01-19","26.4476123"]},{"value":["2017-01-20","17.7240475"]},{"value":["2017-01-21","21.4290393"]},{"value":["2017-01-22","12.6460937"]},{"value":["2017-01-23","13.0934412"]},{"value":["2017-01-24","22.5574877"]},{"value":["2017-01-25","15.9300291"]},{"value":["2017-01-26","20.8978664"]},{"value":["2017-01-27","23.5087989"]},{"value":["2017-01-28","24.8111331"]},{"value":["2017-01-29","25.5163533"]},{"value":["2017-01-30","16.3326096"]},{"value":["2017-01-31","15.2810313"]},{"value":["2017-02-01","14.9841365"]},{"value":["2017-02-02","24.7308739"]},{"value":["2017-02-03","27.4276032"]},{"value":["2017-02-04","15.7388174"]},{"value":["2017-02-05","19.0669427"]},{"value":["2017-02-06","21.7570331"]},{"value":["2017-02-07"," 9.1855898"]},{"value":["2017-02-08","35.9524882"]},{"value":["2017-02-09","15.8732205"]},{"value":["2017-02-10","22.7171344"]},{"value":["2017-02-11","27.9208864"]},{"value":["2017-02-12","17.6099502"]},{"value":["2017-02-13","19.5708111"]},{"value":["2017-02-14","16.9076663"]},{"value":["2017-02-15","15.5438577"]},{"value":["2017-02-16","11.4341996"]},{"value":["2017-02-17"," 8.3182193"]},{"value":["2017-02-18","21.2202096"]},{"value":["2017-02-19","20.0917484"]},{"value":["2017-02-20","21.9006948"]},{"value":["2017-02-21","32.3890165"]},{"value":["2017-02-22","20.6516885"]},{"value":["2017-02-23","20.8551394"]},{"value":["2017-02-24","16.2177504"]},{"value":["2017-02-25","16.6475961"]},{"value":["2017-02-26","11.8991038"]},{"value":["2017-02-27","29.1356096"]},{"value":["2017-02-28","15.8892748"]},{"value":["2017-03-01"," 7.3709904"]},{"value":["2017-03-02","22.5306979"]},{"value":["2017-03-03","23.1452750"]},{"value":["2017-03-04","24.0539595"]},{"value":["2017-03-05","23.4091618"]},{"value":["2017-03-06","29.6597438"]},{"value":["2017-03-07","29.0720469"]},{"value":["2017-03-08","20.4275054"]},{"value":["2017-03-09","29.7046579"]},{"value":["2017-03-10","17.5898812"]},{"value":["2017-03-11","17.2298816"]},{"value":["2017-03-12","14.2483304"]},{"value":["2017-03-13","24.0500929"]},{"value":["2017-03-14","26.6540414"]},{"value":["2017-03-15","19.3595673"]},{"value":["2017-03-16","23.6057213"]},{"value":["2017-03-17","22.1542088"]},{"value":["2017-03-18","13.1507711"]},{"value":["2017-03-19","31.6406919"]},{"value":["2017-03-20","21.6266349"]},{"value":["2017-03-21","14.8752321"]},{"value":["2017-03-22","20.0418800"]},{"value":["2017-03-23","19.2281024"]},{"value":["2017-03-24","20.5993501"]},{"value":["2017-03-25","13.2732126"]},{"value":["2017-03-26","18.6162141"]},{"value":["2017-03-27","24.7464919"]},{"value":["2017-03-28","21.1875033"]},{"value":["2017-03-29","26.3337252"]},{"value":["2017-03-30"," 6.6975834"]},{"value":["2017-03-31","11.1030802"]},{"value":["2017-04-01","20.1281336"]},{"value":["2017-04-02","26.4176472"]},{"value":["2017-04-03","16.7867091"]},{"value":["2017-04-04","23.1557588"]},{"value":["2017-04-05","27.2339800"]},{"value":["2017-04-06","22.9915685"]},{"value":["2017-04-07","22.7453272"]},{"value":["2017-04-08","23.6205550"]},{"value":["2017-04-09","21.4811693"]},{"value":["2017-04-10","21.6261175"]},{"value":["2017-04-11","15.8097434"]},{"value":["2017-04-12","21.4183856"]},{"value":["2017-04-13","16.5533952"]},{"value":["2017-04-14","27.8252041"]},{"value":["2017-04-15","21.7869234"]},{"value":["2017-04-16","14.5962681"]},{"value":["2017-04-17","19.3798750"]},{"value":["2017-04-18","18.1927855"]},{"value":["2017-04-19","17.9346458"]},{"value":["2017-04-20","22.2733243"]},{"value":["2017-04-21","18.5712873"]},{"value":["2017-04-22","20.2268964"]},{"value":["2017-04-23","14.7175149"]},{"value":["2017-04-24","10.2671335"]},{"value":["2017-04-25","28.0462366"]},{"value":["2017-04-26","26.3710109"]},{"value":["2017-04-27","17.9643600"]},{"value":["2017-04-28","22.5301252"]},{"value":["2017-04-29","26.3254837"]},{"value":["2017-04-30","19.9158110"]},{"value":["2017-05-01","10.4185813"]},{"value":["2017-05-02","21.1875857"]},{"value":["2017-05-03"," 9.5343689"]},{"value":["2017-05-04","13.6239129"]},{"value":["2017-05-05","17.4011424"]},{"value":["2017-05-06","22.6334546"]},{"value":["2017-05-07","19.9917834"]},{"value":["2017-05-08","18.9808586"]},{"value":["2017-05-09","13.4695493"]},{"value":["2017-05-10","15.5750461"]},{"value":["2017-05-11","21.4821571"]},{"value":["2017-05-12","22.1403510"]},{"value":["2017-05-13","11.0227935"]},{"value":["2017-05-14","32.6524165"]},{"value":["2017-05-15","19.7974749"]},{"value":["2017-05-16","23.3695248"]},{"value":["2017-05-17","22.4008576"]},{"value":["2017-05-18","31.8922652"]},{"value":["2017-05-19","12.3188286"]},{"value":["2017-05-20","14.9586045"]},{"value":["2017-05-21","21.1975939"]},{"value":["2017-05-22","24.1233032"]},{"value":["2017-05-23","27.5646109"]},{"value":["2017-05-24","21.0531176"]},{"value":["2017-05-25","10.9501553"]},{"value":["2017-05-26","11.5428429"]},{"value":["2017-05-27","14.0107092"]},{"value":["2017-05-28","18.0815142"]},{"value":["2017-05-29","18.1901435"]},{"value":["2017-05-30","14.0923974"]},{"value":["2017-05-31","17.5110507"]},{"value":["2017-06-01","22.9108394"]},{"value":["2017-06-02","18.8712608"]},{"value":["2017-06-03","20.0343236"]},{"value":["2017-06-04","21.3349710"]},{"value":["2017-06-05","20.9168859"]},{"value":["2017-06-06","30.8615201"]},{"value":["2017-06-07","18.1061301"]},{"value":["2017-06-08","25.2648639"]},{"value":["2017-06-09","11.2467960"]},{"value":["2017-06-10","15.2669493"]},{"value":["2017-06-11","25.5165184"]},{"value":["2017-06-12","29.7989319"]},{"value":["2017-06-13","16.9338668"]},{"value":["2017-06-14","26.2945920"]},{"value":["2017-06-15","28.8389125"]},{"value":["2017-06-16","14.3552501"]},{"value":["2017-06-17","25.5066112"]},{"value":["2017-06-18","26.9803742"]},{"value":["2017-06-19","16.3974554"]},{"value":["2017-06-20","16.9246242"]},{"value":["2017-06-21","15.6995157"]},{"value":["2017-06-22","22.8623989"]},{"value":["2017-06-23","19.7507160"]},{"value":["2017-06-24","22.4031637"]},{"value":["2017-06-25","24.2040628"]},{"value":["2017-06-26","18.6599961"]},{"value":["2017-06-27","19.0537486"]},{"value":["2017-06-28","18.1945974"]},{"value":["2017-06-29","18.4962649"]},{"value":["2017-06-30","26.3517302"]},{"value":["2017-07-01","16.4503433"]},{"value":["2017-07-02","27.2351996"]},{"value":["2017-07-03","17.5326539"]},{"value":["2017-07-04","15.1757240"]},{"value":["2017-07-05","24.9731892"]},{"value":["2017-07-06","18.9515971"]},{"value":["2017-07-07","27.2781602"]},{"value":["2017-07-08","16.6607480"]},{"value":["2017-07-09","14.4313268"]},{"value":["2017-07-10","21.3147217"]},{"value":["2017-07-11","11.9132017"]},{"value":["2017-07-12","25.3305928"]},{"value":["2017-07-13","17.6365642"]},{"value":["2017-07-14","14.3840571"]},{"value":["2017-07-15","10.5905469"]},{"value":["2017-07-16","24.4505194"]},{"value":["2017-07-17","14.9849619"]},{"value":["2017-07-18","24.0401402"]},{"value":["2017-07-19","24.3694887"]},{"value":["2017-07-20","28.1284996"]},{"value":["2017-07-21","18.5977145"]},{"value":["2017-07-22","15.7853345"]},{"value":["2017-07-23","21.4653498"]},{"value":["2017-07-24","30.6200171"]},{"value":["2017-07-25","15.1169030"]},{"value":["2017-07-26","18.7775959"]},{"value":["2017-07-27","30.1589342"]},{"value":["2017-07-28","17.4363151"]},{"value":["2017-07-29","25.6152579"]},{"value":["2017-07-30","21.2276235"]},{"value":["2017-07-31","17.6411078"]},{"value":["2017-08-01","16.5296274"]},{"value":["2017-08-02","20.5148179"]},{"value":["2017-08-03","25.9104766"]},{"value":["2017-08-04","14.1002809"]},{"value":["2017-08-05","13.1136556"]},{"value":["2017-08-06","23.8294980"]},{"value":["2017-08-07","31.5677151"]},{"value":["2017-08-08","28.0541652"]},{"value":["2017-08-09","25.2437758"]},{"value":["2017-08-10","20.4900036"]},{"value":["2017-08-11","22.0860951"]},{"value":["2017-08-12","14.4765194"]},{"value":["2017-08-13","25.1318133"]},{"value":["2017-08-14","26.7128304"]},{"value":["2017-08-15"," 8.0504003"]},{"value":["2017-08-16","15.6972943"]},{"value":["2017-08-17","24.1903356"]},{"value":["2017-08-18","14.0648734"]},{"value":["2017-08-19","14.2565232"]},{"value":["2017-08-20","28.2655279"]},{"value":["2017-08-21","17.5544633"]},{"value":["2017-08-22","26.2410838"]},{"value":["2017-08-23","29.2226186"]},{"value":["2017-08-24","24.6704007"]},{"value":["2017-08-25","15.2895302"]},{"value":["2017-08-26","16.3107152"]},{"value":["2017-08-27","20.1790751"]},{"value":["2017-08-28","17.6466132"]},{"value":["2017-08-29","14.5875166"]},{"value":["2017-08-30","24.7646631"]},{"value":["2017-08-31","15.7646747"]},{"value":["2017-09-01","22.0051976"]},{"value":["2017-09-02","18.4622532"]},{"value":["2017-09-03","23.2373998"]},{"value":["2017-09-04","28.6817002"]},{"value":["2017-09-05","25.6479776"]},{"value":["2017-09-06","19.6479656"]},{"value":["2017-09-07","23.0919687"]},{"value":["2017-09-08","20.0891410"]},{"value":["2017-09-09","18.6258424"]},{"value":["2017-09-10","25.8139053"]},{"value":["2017-09-11","21.0657988"]},{"value":["2017-09-12","19.2279496"]},{"value":["2017-09-13","20.6565953"]},{"value":["2017-09-14","19.6523318"]},{"value":["2017-09-15","19.6212374"]},{"value":["2017-09-16","21.3748888"]},{"value":["2017-09-17","16.4665370"]},{"value":["2017-09-18","22.0026035"]},{"value":["2017-09-19","14.4179645"]},{"value":["2017-09-20","28.7890211"]},{"value":["2017-09-21","29.0198273"]},{"value":["2017-09-22","26.4490373"]},{"value":["2017-09-23","19.3897655"]},{"value":["2017-09-24","13.8199344"]},{"value":["2017-09-25","25.8124340"]},{"value":["2017-09-26","17.2009093"]},{"value":["2017-09-27","23.3325026"]},{"value":["2017-09-28","19.8308014"]},{"value":["2017-09-29","25.2126893"]},{"value":["2017-09-30","20.8095328"]},{"value":["2017-10-01","20.5877616"]},{"value":["2017-10-02","19.8739954"]},{"value":["2017-10-03","13.4984389"]},{"value":["2017-10-04","17.7081570"]},{"value":["2017-10-05","17.2367793"]},{"value":["2017-10-06","17.2007561"]},{"value":["2017-10-07","26.2279531"]},{"value":["2017-10-08","19.4484930"]},{"value":["2017-10-09"," 5.6317662"]},{"value":["2017-10-10","25.9327629"]},{"value":["2017-10-11","27.8283457"]},{"value":["2017-10-12","26.2471878"]},{"value":["2017-10-13","15.9112066"]},{"value":["2017-10-14","12.2312200"]},{"value":["2017-10-15","20.4337733"]},{"value":["2017-10-16","20.7301907"]},{"value":["2017-10-17","23.0323025"]},{"value":["2017-10-18"," 8.6473924"]},{"value":["2017-10-19","22.5552543"]},{"value":["2017-10-20","21.8816105"]},{"value":["2017-10-21","16.2189278"]},{"value":["2017-10-22","23.0258487"]},{"value":["2017-10-23","32.9644683"]},{"value":["2017-10-24"," 4.9968105"]},{"value":["2017-10-25","26.3452310"]},{"value":["2017-10-26","24.7131621"]},{"value":["2017-10-27"," 4.9843973"]},{"value":["2017-10-28","18.2034172"]},{"value":["2017-10-29","22.9773478"]},{"value":["2017-10-30","25.3974301"]},{"value":["2017-10-31","24.2170601"]},{"value":["2017-11-01","20.0847908"]},{"value":["2017-11-02","14.7715258"]},{"value":["2017-11-03","21.0837870"]},{"value":["2017-11-04","10.9999931"]},{"value":["2017-11-05","38.4491899"]},{"value":["2017-11-06","31.5117350"]},{"value":["2017-11-07","29.6297035"]},{"value":["2017-11-08","24.4917564"]},{"value":["2017-11-09","14.2832484"]},{"value":["2017-11-10","13.2188555"]},{"value":["2017-11-11","24.1755731"]},{"value":["2017-11-12","17.8694232"]},{"value":["2017-11-13","21.5658072"]},{"value":["2017-11-14","17.5598761"]},{"value":["2017-11-15"," 7.4409583"]},{"value":["2017-11-16","11.3089965"]},{"value":["2017-11-17","18.5920461"]},{"value":["2017-11-18","18.7448527"]},{"value":["2017-11-19","18.0319079"]},{"value":["2017-11-20","23.7654290"]},{"value":["2017-11-21","27.1350595"]},{"value":["2017-11-22","19.8283850"]},{"value":["2017-11-23","25.7331696"]},{"value":["2017-11-24","14.9440392"]},{"value":["2017-11-25","21.2470792"]},{"value":["2017-11-26","14.9860978"]},{"value":["2017-11-27","20.5700599"]},{"value":["2017-11-28"," 7.1122752"]},{"value":["2017-11-29","19.3379008"]},{"value":["2017-11-30","11.4811842"]},{"value":["2017-12-01","19.0202013"]},{"value":["2017-12-02","21.0585445"]},{"value":["2017-12-03","20.9737744"]},{"value":["2017-12-04","21.6818372"]},{"value":["2017-12-05","17.0419778"]},{"value":["2017-12-06","17.5865326"]},{"value":["2017-12-07","14.5440290"]},{"value":["2017-12-08","15.8036746"]},{"value":["2017-12-09","21.3898865"]},{"value":["2017-12-10","25.8789579"]},{"value":["2017-12-11","18.9579210"]},{"value":["2017-12-12","13.6298028"]},{"value":["2017-12-13","26.1581070"]},{"value":["2017-12-14","20.9650492"]},{"value":["2017-12-15","15.9134561"]},{"value":["2017-12-16","30.2033280"]},{"value":["2017-12-17","16.3769194"]},{"value":["2017-12-18","25.5459635"]},{"value":["2017-12-19","31.3838336"]},{"value":["2017-12-20","23.3574515"]},{"value":["2017-12-21","17.4290857"]},{"value":["2017-12-22","23.1989069"]},{"value":["2017-12-23","20.3673058"]},{"value":["2017-12-24","11.7022672"]},{"value":["2017-12-25","25.0539220"]},{"value":["2017-12-26","15.5885873"]},{"value":["2017-12-27"," 8.5655420"]},{"value":["2017-12-28","23.8692050"]},{"value":["2017-12-29","21.5544707"]},{"value":["2017-12-30","26.2385532"]},{"value":["2017-12-31","12.8516750"]},{"value":["2018-01-01","11.7449468"]},{"value":["2018-01-02","13.6551853"]},{"value":["2018-01-03","19.3871934"]},{"value":["2018-01-04","20.7146181"]},{"value":["2018-01-05","21.0115993"]},{"value":["2018-01-06","22.7067057"]},{"value":["2018-01-07","15.3343208"]},{"value":["2018-01-08","19.6993955"]},{"value":["2018-01-09","12.7961523"]},{"value":["2018-01-10","20.3681618"]},{"value":["2018-01-11","16.5358435"]},{"value":["2018-01-12","15.3070605"]},{"value":["2018-01-13","23.3576463"]},{"value":["2018-01-14","21.3395859"]},{"value":["2018-01-15","10.2637353"]},{"value":["2018-01-16","23.6034888"]},{"value":["2018-01-17","20.3083653"]},{"value":["2018-01-18","14.2030638"]},{"value":["2018-01-19","21.2387710"]},{"value":["2018-01-20","22.6074409"]},{"value":["2018-01-21","33.5130615"]},{"value":["2018-01-22","13.3514022"]},{"value":["2018-01-23","15.5290827"]},{"value":["2018-01-24","15.5817341"]},{"value":["2018-01-25","22.1277632"]},{"value":["2018-01-26","27.4265272"]},{"value":["2018-01-27"," 5.9984970"]},{"value":["2018-01-28","17.6063583"]},{"value":["2018-01-29","27.0828610"]},{"value":["2018-01-30","26.5039312"]},{"value":["2018-01-31","21.5837088"]},{"value":["2018-02-01","26.6650551"]},{"value":["2018-02-02","18.4805267"]},{"value":["2018-02-03","24.6327142"]},{"value":["2018-02-04","23.8785454"]},{"value":["2018-02-05","19.0037790"]},{"value":["2018-02-06","19.2382161"]},{"value":["2018-02-07","22.5401207"]},{"value":["2018-02-08","13.0899424"]},{"value":["2018-02-09","17.6951291"]},{"value":["2018-02-10","29.9096934"]},{"value":["2018-02-11","23.5812460"]},{"value":["2018-02-12","14.9684214"]},{"value":["2018-02-13","12.8949222"]},{"value":["2018-02-14","15.7186766"]},{"value":["2018-02-15","13.2213417"]},{"value":["2018-02-16","23.0596733"]},{"value":["2018-02-17","21.0448856"]},{"value":["2018-02-18","26.2271594"]},{"value":["2018-02-19","28.1626804"]},{"value":["2018-02-20","23.2406153"]},{"value":["2018-02-21","28.6919068"]},{"value":["2018-02-22","14.3479499"]},{"value":["2018-02-23"," 3.7537856"]},{"value":["2018-02-24","24.9527727"]},{"value":["2018-02-25","17.6889602"]},{"value":["2018-02-26","14.5766185"]},{"value":["2018-02-27","22.0318995"]},{"value":["2018-02-28","13.8118032"]},{"value":["2018-03-01","25.2922109"]},{"value":["2018-03-02","22.1818225"]},{"value":["2018-03-03","24.6881574"]},{"value":["2018-03-04","19.2413285"]},{"value":["2018-03-05","12.5512588"]},{"value":["2018-03-06","22.9408529"]},{"value":["2018-03-07","22.1340566"]},{"value":["2018-03-08","21.9613920"]},{"value":["2018-03-09","13.7872399"]},{"value":["2018-03-10","30.6746663"]},{"value":["2018-03-11","25.6962368"]},{"value":["2018-03-12"," 8.4702943"]},{"value":["2018-03-13","14.2426522"]},{"value":["2018-03-14","18.8285143"]},{"value":["2018-03-15","19.0833794"]},{"value":["2018-03-16","19.6527461"]},{"value":["2018-03-17","20.5225537"]},{"value":["2018-03-18","22.7261766"]},{"value":["2018-03-19","21.7305073"]},{"value":["2018-03-20"," 8.5745004"]},{"value":["2018-03-21","26.2599037"]},{"value":["2018-03-22","13.1814213"]},{"value":["2018-03-23","24.3251461"]},{"value":["2018-03-24","18.3502582"]},{"value":["2018-03-25","18.2608996"]},{"value":["2018-03-26","26.1006381"]},{"value":["2018-03-27","18.8086294"]},{"value":["2018-03-28","21.8011371"]},{"value":["2018-03-29","12.9562231"]},{"value":["2018-03-30","22.7542118"]},{"value":["2018-03-31","15.1176383"]},{"value":["2018-04-01","18.8590753"]},{"value":["2018-04-02","27.1282400"]},{"value":["2018-04-03","17.8922982"]},{"value":["2018-04-04","25.1554159"]},{"value":["2018-04-05","16.5465424"]},{"value":["2018-04-06","24.7960494"]},{"value":["2018-04-07","18.6320503"]},{"value":["2018-04-08","16.0323949"]},{"value":["2018-04-09"," 3.8291911"]},{"value":["2018-04-10","16.3856391"]},{"value":["2018-04-11","16.4635472"]},{"value":["2018-04-12","14.3872775"]},{"value":["2018-04-13","24.9733899"]},{"value":["2018-04-14","26.0038222"]},{"value":["2018-04-15","23.0956395"]},{"value":["2018-04-16","23.3598427"]},{"value":["2018-04-17"," 8.3377449"]},{"value":["2018-04-18","28.0577863"]},{"value":["2018-04-19","27.9401990"]},{"value":["2018-04-20","32.0968811"]},{"value":["2018-04-21","14.5693258"]},{"value":["2018-04-22","28.1426037"]},{"value":["2018-04-23","25.0898974"]},{"value":["2018-04-24","18.3094350"]},{"value":["2018-04-25","22.1688111"]},{"value":["2018-04-26","20.1822913"]},{"value":["2018-04-27","19.8434508"]},{"value":["2018-04-28","21.7291094"]},{"value":["2018-04-29","20.0912577"]},{"value":["2018-04-30","20.6938401"]},{"value":["2018-05-01","16.0429010"]},{"value":["2018-05-02","24.1223441"]},{"value":["2018-05-03","18.0532061"]},{"value":["2018-05-04","18.2170568"]},{"value":["2018-05-05","18.6601548"]},{"value":["2018-05-06","11.2947788"]},{"value":["2018-05-07","24.9954640"]},{"value":["2018-05-08","11.4928107"]},{"value":["2018-05-09","24.6466417"]},{"value":["2018-05-10","19.3843590"]},{"value":["2018-05-11","15.2129283"]},{"value":["2018-05-12","23.7110583"]},{"value":["2018-05-13","10.8956937"]},{"value":["2018-05-14","12.0369367"]},{"value":["2018-05-15","12.1368238"]},{"value":["2018-05-16","13.1080449"]},{"value":["2018-05-17","20.9470620"]},{"value":["2018-05-18","22.8260221"]},{"value":["2018-05-19","31.0828846"]},{"value":["2018-05-20","23.7869383"]},{"value":["2018-05-21","22.6113561"]},{"value":["2018-05-22","33.2570430"]},{"value":["2018-05-23","14.6510012"]},{"value":["2018-05-24","14.1206214"]},{"value":["2018-05-25","36.3992137"]},{"value":["2018-05-26","16.9403322"]},{"value":["2018-05-27","12.7157715"]},{"value":["2018-05-28","21.0364252"]},{"value":["2018-05-29","17.7266744"]},{"value":["2018-05-30","21.6816598"]},{"value":["2018-05-31","39.6773165"]},{"value":["2018-06-01","22.8194478"]},{"value":["2018-06-02","21.9932858"]},{"value":["2018-06-03","30.9509368"]},{"value":["2018-06-04","11.3125929"]},{"value":["2018-06-05","23.3967210"]},{"value":["2018-06-06","36.2992333"]},{"value":["2018-06-07","16.6233881"]},{"value":["2018-06-08","30.2411417"]},{"value":["2018-06-09","20.1573790"]},{"value":["2018-06-10","21.6257069"]},{"value":["2018-06-11","17.9024814"]},{"value":["2018-06-12","19.7155679"]},{"value":["2018-06-13","18.1682478"]},{"value":["2018-06-14","20.0327050"]},{"value":["2018-06-15"," 9.9326725"]},{"value":["2018-06-16","19.9877062"]},{"value":["2018-06-17","20.2914647"]},{"value":["2018-06-18","27.5937963"]},{"value":["2018-06-19","27.2138263"]},{"value":["2018-06-20","21.7023305"]},{"value":["2018-06-21","25.9199322"]},{"value":["2018-06-22","29.1824821"]},{"value":["2018-06-23","24.1998503"]},{"value":["2018-06-24","13.3465082"]},{"value":["2018-06-25","22.4785381"]},{"value":["2018-06-26","27.2426655"]},{"value":["2018-06-27","28.3739683"]},{"value":["2018-06-28"," 5.7828126"]},{"value":["2018-06-29","27.8958139"]},{"value":["2018-06-30","25.4073572"]},{"value":["2018-07-01","27.2168932"]},{"value":["2018-07-02","22.4873332"]},{"value":["2018-07-03","16.6714421"]},{"value":["2018-07-04","24.1491213"]},{"value":["2018-07-05","17.1772106"]},{"value":["2018-07-06","12.2463998"]},{"value":["2018-07-07","20.4181096"]},{"value":["2018-07-08","21.9319222"]},{"value":["2018-07-09","18.3334359"]},{"value":["2018-07-10","13.4495745"]},{"value":["2018-07-11","14.5880409"]},{"value":["2018-07-12","32.1339889"]},{"value":["2018-07-13","21.5011599"]},{"value":["2018-07-14","-0.4320969"]},{"value":["2018-07-15","28.3047137"]},{"value":["2018-07-16","19.2186595"]},{"value":["2018-07-17","17.4293526"]},{"value":["2018-07-18","19.6010791"]},{"value":["2018-07-19","11.4752450"]},{"value":["2018-07-20","14.7899555"]},{"value":["2018-07-21","24.8861167"]},{"value":["2018-07-22","19.9515184"]},{"value":["2018-07-23","23.7913331"]},{"value":["2018-07-24"," 7.3715958"]},{"value":["2018-07-25","16.0466758"]},{"value":["2018-07-26","16.4470885"]},{"value":["2018-07-27","18.5916968"]},{"value":["2018-07-28"," 9.0783507"]},{"value":["2018-07-29","19.3703234"]},{"value":["2018-07-30","25.8304600"]},{"value":["2018-07-31","24.6122854"]},{"value":["2018-08-01","24.7090698"]},{"value":["2018-08-02","16.0041685"]},{"value":["2018-08-03","28.8829853"]},{"value":["2018-08-04","24.7256105"]},{"value":["2018-08-05","23.9956654"]},{"value":["2018-08-06","24.0727403"]},{"value":["2018-08-07","10.9629565"]},{"value":["2018-08-08","20.0925899"]},{"value":["2018-08-09","28.5396202"]},{"value":["2018-08-10","10.6162107"]},{"value":["2018-08-11","17.8248158"]},{"value":["2018-08-12","13.5908548"]},{"value":["2018-08-13","15.4588024"]},{"value":["2018-08-14","17.4063804"]},{"value":["2018-08-15"," 9.9499334"]},{"value":["2018-08-16","13.9623711"]},{"value":["2018-08-17","22.5977588"]},{"value":["2018-08-18"," 5.7808543"]},{"value":["2018-08-19","25.0540234"]},{"value":["2018-08-20","31.3557934"]},{"value":["2018-08-21","22.1893432"]},{"value":["2018-08-22","15.7637977"]},{"value":["2018-08-23","21.3409496"]},{"value":["2018-08-24","16.6039217"]},{"value":["2018-08-25","15.4843917"]},{"value":["2018-08-26","16.6390353"]},{"value":["2018-08-27","14.2167815"]},{"value":["2018-08-28","21.3109824"]},{"value":["2018-08-29","19.1082445"]},{"value":["2018-08-30","16.6030973"]},{"value":["2018-08-31","18.2061604"]},{"value":["2018-09-01","11.0382774"]},{"value":["2018-09-02","26.5796290"]},{"value":["2018-09-03","24.6776676"]},{"value":["2018-09-04","24.4810851"]},{"value":["2018-09-05","16.0624354"]},{"value":["2018-09-06","17.8719022"]},{"value":["2018-09-07","22.8426098"]},{"value":["2018-09-08","18.5042842"]},{"value":["2018-09-09","22.9709377"]},{"value":["2018-09-10","22.4240495"]},{"value":["2018-09-11","12.0568241"]},{"value":["2018-09-12","25.0225161"]},{"value":["2018-09-13","28.6788145"]},{"value":["2018-09-14","23.5820762"]},{"value":["2018-09-15","29.0276167"]},{"value":["2018-09-16","23.8810138"]},{"value":["2018-09-17","25.5567883"]},{"value":["2018-09-18","20.3767462"]},{"value":["2018-09-19","26.8834413"]},{"value":["2018-09-20","32.0274632"]},{"value":["2018-09-21","26.0207385"]},{"value":["2018-09-22","24.3556079"]},{"value":["2018-09-23","13.9900574"]},{"value":["2018-09-24","17.9108097"]},{"value":["2018-09-25","22.7693334"]},{"value":["2018-09-26","19.6124493"]},{"value":["2018-09-27","20.2022165"]},{"value":["2018-09-28","17.9923693"]},{"value":["2018-09-29","24.7958067"]},{"value":["2018-09-30","11.3988735"]},{"value":["2018-10-01","17.6236212"]},{"value":["2018-10-02","19.5139632"]},{"value":["2018-10-03","16.3768394"]},{"value":["2018-10-04","21.0916146"]},{"value":["2018-10-05","22.2156015"]},{"value":["2018-10-06","11.7420289"]},{"value":["2018-10-07","24.7799074"]},{"value":["2018-10-08","18.7455817"]},{"value":["2018-10-09","26.2563323"]},{"value":["2018-10-10","11.6460479"]},{"value":["2018-10-11","19.4632831"]},{"value":["2018-10-12","17.2796245"]},{"value":["2018-10-13","16.9865915"]},{"value":["2018-10-14","30.4227641"]},{"value":["2018-10-15","28.5480273"]},{"value":["2018-10-16","16.5981650"]},{"value":["2018-10-17","17.5266578"]},{"value":["2018-10-18","24.7640418"]},{"value":["2018-10-19","25.0625893"]},{"value":["2018-10-20","19.6808374"]},{"value":["2018-10-21","26.3355124"]},{"value":["2018-10-22","14.2053970"]},{"value":["2018-10-23","19.2975607"]},{"value":["2018-10-24","14.2547562"]},{"value":["2018-10-25","16.4743726"]},{"value":["2018-10-26"," 8.6200926"]},{"value":["2018-10-27","23.2539888"]},{"value":["2018-10-28","19.0223889"]},{"value":["2018-10-29","30.4266021"]},{"value":["2018-10-30","11.7256311"]},{"value":["2018-10-31","17.8426948"]},{"value":["2018-11-01","24.3182119"]},{"value":["2018-11-02","30.0324417"]},{"value":["2018-11-03","19.1936164"]},{"value":["2018-11-04","12.7820717"]},{"value":["2018-11-05","31.8456207"]},{"value":["2018-11-06","22.5094598"]},{"value":["2018-11-07","12.9907976"]},{"value":["2018-11-08","27.3597352"]},{"value":["2018-11-09","17.8452717"]},{"value":["2018-11-10","18.3195179"]},{"value":["2018-11-11","26.3879448"]},{"value":["2018-11-12","13.3887417"]},{"value":["2018-11-13","20.8234606"]},{"value":["2018-11-14","19.5159714"]},{"value":["2018-11-15","11.5008026"]},{"value":["2018-11-16","27.9102708"]},{"value":["2018-11-17","27.2785227"]},{"value":["2018-11-18","16.7891402"]},{"value":["2018-11-19","27.0755703"]},{"value":["2018-11-20","24.3212183"]},{"value":["2018-11-21","19.9298450"]},{"value":["2018-11-22","10.8151298"]},{"value":["2018-11-23","21.1929407"]},{"value":["2018-11-24","20.2549568"]},{"value":["2018-11-25","26.8503752"]},{"value":["2018-11-26","19.3638332"]},{"value":["2018-11-27","12.7526201"]},{"value":["2018-11-28","20.3240964"]},{"value":["2018-11-29","18.4433559"]},{"value":["2018-11-30","21.0101080"]},{"value":["2018-12-01","19.7046711"]},{"value":["2018-12-02","14.9115845"]},{"value":["2018-12-03","16.8694088"]},{"value":["2018-12-04","27.0487018"]},{"value":["2018-12-05","20.4163440"]},{"value":["2018-12-06","20.3036738"]},{"value":["2018-12-07","37.4529542"]},{"value":["2018-12-08","24.1928286"]},{"value":["2018-12-09","22.4453025"]},{"value":["2018-12-10","23.8247973"]},{"value":["2018-12-11","20.0946419"]},{"value":["2018-12-12","13.4041671"]},{"value":["2018-12-13"," 5.9790283"]},{"value":["2018-12-14","21.0075663"]},{"value":["2018-12-15","22.3666856"]},{"value":["2018-12-16","24.9254096"]},{"value":["2018-12-17","21.2413590"]},{"value":["2018-12-18","18.5474738"]},{"value":["2018-12-19","16.4693353"]},{"value":["2018-12-20","21.7945461"]},{"value":["2018-12-21","20.3181959"]},{"value":["2018-12-22","25.2777044"]},{"value":["2018-12-23","20.8464868"]},{"value":["2018-12-24","14.0817849"]},{"value":["2018-12-25","19.6918466"]},{"value":["2018-12-26","22.0297088"]},{"value":["2018-12-27","10.4036602"]},{"value":["2018-12-28","19.4843216"]},{"value":["2018-12-29","24.7604976"]},{"value":["2018-12-30","12.7817436"]},{"value":["2018-12-31","23.6552845"]}],"name":null,"type":"heatmap","coordinateSystem":"calendar","calendarIndex":0}],"visualMap":[{"max":30,"calculable":true,"type":"continuous"}],"title":[{"text":"Calendar","subtext":"Heatmap"}]},"dispose":true},"evals":[],"jsHooks":[]}</script>
+</div>
+<h1 id="in-my-opinion">In my opinion</h1>
+<h2 id="section">2021</h2>
+<h3 id="january">January</h3>
+<h4 id="week">01 week</h4>
+<h4 id="week-1">02 week</h4>
+<h4 id="week-2">03 week</h4>
+<h4 id="week-3">04 week</h4>
+<h3 id="february">February</h3>
+<h4 id="week-4">05 week</h4>
+<h4 id="week-5">06 week</h4>
+<h4 id="week-6">07 week</h4>
+<h4 id="week-7">08 week</h4>
+<h4 id="week-8">09 week</h4>
+<h3 id="march">March</h3>
+<h4 id="week-9">10 week</h4>
+<h4 id="week-10">11 week</h4>
+<h4 id="week-11">12 week</h4>
+<h4 id="week-12">13 week</h4>
+<h3 id="april">April</h3>
+<h4 id="week-13">14 week</h4>
+<h4 id="week-14">15 week</h4>
+<h4 id="week-15">16 week</h4>
+<h4 id="week-16">17 week</h4>
+<h3 id="may">May</h3>
+<h4 id="week-17">18 week</h4>
+<h4 id="week-18">19 week</h4>
+<h4 id="week-19">20 week</h4>
+<h4 id="week-20">21 week</h4>
+<h3 id="june">June</h3>
+<h4 id="week-21">22 week</h4>
+<h4 id="week-22">23 week</h4>
+<h4 id="week-23">24 week</h4>
+<h4 id="week-24">25 week</h4>
+<h4 id="week-25">26 week</h4>
+<h3 id="july">July</h3>
+<h4 id="week-26">27 week</h4>
+<h4 id="week-27">28 week</h4>
+<h4 id="week-28">29 week</h4>
+<h4 id="week-29">30 week</h4>
+<h3 id="august">August</h3>
+<h4 id="week-30">31 week</h4>
+<h4 id="week-31">32 week</h4>
+<h4 id="week-32">33 week</h4>
+<h4 id="week-33">34 week</h4>
+<h4 id="week-34">35 week</h4>
+<h3 id="september">September</h3>
+<h4 id="week-35">36 week</h4>
+<h4 id="week-36">37 week</h4>
+<h4 id="week-37">38 week</h4>
+<h4 id="week-38">39 week</h4>
+<h3 id="october">October</h3>
+<h4 id="week-39">40 week</h4>
+<h4 id="week-40">41 week</h4>
+<h4 id="week-41">42 week</h4>
+<h4 id="week-42">43 week</h4>
+<h4 id="week-43">44 week</h4>
+<h3 id="november">November</h3>
+<h4 id="week-44">45 week</h4>
+<h4 id="week-45">46 week</h4>
+<h4 id="week-46">47 week</h4>
+<h4 id="week-47">48 week</h4>
+<h3 id="december">December</h3>
+<h4 id="week-48">49 week</h4>
+<h4 id="week-49">50 week</h4>
+<h4 id="week-50">51 week</h4>
+<h4 id="week-51">52 week</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

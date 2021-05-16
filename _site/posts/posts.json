@@ -1,7 +1,7 @@
 [
   {
     "path": "posts/2021-05-09-buildingdistill/",
-    "title": "Building a {distill} website",
+    "title": "Building a {disstill} website",
     "description": "How I built this site using {distill}",
     "author": [
       {
@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\r\nHere is where I will talk about building this website.\r\n\r\n\r\n\r\n",
     "preview": "posts/2021-05-09-buildingdistill/distill.png",
-    "last_modified": "2021-05-09T15:32:56+09:00",
+    "last_modified": "2021-05-16T21:57:39+09:00",
     "input_file": {},
     "preview_width": 2521,
     "preview_height": 2911
@@ -35,7 +35,7 @@
     ],
     "contents": "\r\nHere is where I will talk about building this website.\r\n\r\n\r\n\r\n",
     "preview": "posts/2021-05-09-buildingdistill2nd/distill.png",
-    "last_modified": "2021-05-09T22:40:28+09:00",
+    "last_modified": "2021-05-16T20:54:41+09:00",
     "input_file": {},
     "preview_width": 2521,
     "preview_height": 2911
