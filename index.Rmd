@@ -2,24 +2,25 @@
 title: "Sangrae"
 description: |
  Index.RMD file...
-image: "test.gif"
+image: "mypicture.jpg"
 links:
   - label: LinkedIn
     url: "https://www.linkedin.com/in/%EC%83%81%EB%9E%98-%EB%85%B8-83b7b8a3/"
   - label: GitHub
     url: "https://github.com/kimchicandy"
+  - label: Email
+    url: "mailto:nsr7025@gmail.com"
 output:
-  postcards::jolla
+  postcards::trestles
 site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 
 
 ```
 
-
 ## About me:
 
-## Education : 
+## Education :
