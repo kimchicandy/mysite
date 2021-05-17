@@ -1,0 +1,28 @@
+---
+title: "Personal branding"
+description: |
+output: 
+  distill::distill_article:
+    css: my_theme.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, include=FALSE}
+library(htmltools)
+source("R/functions.R")
+```
+
+
+```{r}
+create_proj_card(
+  img_src = "images/logo.png",
+  url = "https://www.linkedin.com/in/%EC%83%81%EB%9E%98-%EB%85%B8-83b7b8a3/",
+  title = "title",
+  text = "text",
+  text2 = "text2."
+)
+
+```

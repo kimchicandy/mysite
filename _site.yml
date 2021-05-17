@@ -10,11 +10,25 @@ navbar:
     image: logo-psychology.png
   right:
     - text: "About"
-      href: index.html
-    - text: "Blog"
-      href: blog.html
-    - text: "Quantify-me"
       menu:
+        - text: "About me"
+          href: index.html
+        - text: "----"
+        - text: "Curriculum Vitae"
+          href: curriculum_vitae.html
+        - text: "----"
+        - text: "Personal Branding"
+          href: personal_branding.html
+
+    - text: "Qualify me"
+      menu:
+        - text: "Blog"
+          href: blog.html
+        - text: "---"
+        - text: "Breaking the sea"
+          href: Ax_breaking_the_sea.html
+    - text: "Quantify me"
+      menu: 
         - text: "Every little helps"
           href: habit.html
         - text: "---"
