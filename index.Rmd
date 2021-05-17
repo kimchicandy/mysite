@@ -1,5 +1,5 @@
 ---
-title: "sangrae noe"
+title: "Sangrae"
 description: |
  Index.RMD file...
 image: "test.gif"
