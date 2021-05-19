@@ -3,23 +3,49 @@ title: "Curriculum Vitae"
 description: |
   A new article created using the Distill format.
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+  - name: Sangrae.noe 
 date: "`r Sys.Date()`"
-output: distill::distill_article
+distill::distill_article:
+    toc: true
+    toc_depth: 4
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web. 
+# Personal info
 
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+**Name** : Sangrae-noe 노상래
 
+**Email** : [nsr7025\@gmail.com](mailto:nsr7025@gmail.com){.email}
 
+# **Education and training**
 
+-   [**Catholic university of korea, 2011 \~ 2018**](https://www.catholic.ac.kr/index.do)
 
+    -   Bachelor of Arts and Business Administration (GPA 3.84/4.50)
 
+    -   Double major : Psychology & Business Administration
+
+    -   Scholarship : Academic scholarship : 2011, 2012, 2015
+
+-   **Big Data Professional Training Course, 2015**
+
+-   [**Data Designer Training Course, 2015**](https://www.facebook.com/groups/1522061444735903)
+
+    -   [Retrospect : Ending the 1st Data Designer by Yeowoon Bae](https://www.slideshare.net/neuroassociates/1-50338144)
+
+-   [**Shinhancard bigdata Academic Mentoring, 2014**](https://www.shinhancardblog.com/62)
+
+    -   1st prize : Shinhancard & LG Best shop joint marketing strategy contest
+
+# **Work experience**
+
+**Military service**,
+
+-   Seoul Metropolitan Police Agency (2012-12-27 \~ 2014-09-26)
+
+    -   [202 Presidential mobile police guards 713 combat police (Seoul, Jongro-gu)](https://namu.wiki/w/202%EA%B2%BD%EB%B9%84%EB%8B%A8){style="color : blue;"}
+
+    -   Served and discharged from sergeant

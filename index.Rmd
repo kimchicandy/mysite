@@ -2,7 +2,7 @@
 title: "Sangrae"
 description: |
  Index.RMD file...
-image: "mypicture.jpg"
+image: "images/index/MainMypicture.jpg"
 links:
   - label: LinkedIn
     url: "https://www.linkedin.com/in/%EC%83%81%EB%9E%98-%EB%85%B8-83b7b8a3/"
@@ -21,6 +21,11 @@ knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 
 ```
 
-## About me:
+### Hey There!
 
-## Education :
+Welcome to my personal site! I am a data analyst working in e-commerce business. I specialize in using R and Tableau for data analysis, product-cowork, and data visualizations. I am also passionate about Quantify-me, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects on my Portfolio tab.
+
+**Let's collaborate!**\
+Do you want to use one of my idea? Interested in having me talk at your organization or group? Do you have an idea that doesn't fit the previous questions? Email me!
+
+    nsr7025@gmail.com
