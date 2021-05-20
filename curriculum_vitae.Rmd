@@ -7,7 +7,7 @@ author:
 date: "`r Sys.Date()`"
 distill::distill_article:
     toc: true
-    toc_depth: 4
+    toc_depth: 10
 ---
 
 ```{r setup, include=FALSE}
@@ -16,36 +16,90 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Personal info
 
-**Name** : Sangrae-noe 노상래
+-   **Name**
 
-**Email** : [nsr7025\@gmail.com](mailto:nsr7025@gmail.com){.email}
+    -   노상래 (korean)
 
-# **Education and training**
+    -   Sangrae-noe (English)
 
--   [**Catholic university of korea, 2011 \~ 2018**](https://www.catholic.ac.kr/index.do)
+-   **Hobby**
+
+    -   Yoga / Tennis / Swimming / Running
+
+    -   Quantify-me project (Sleep, Habit tracking, Personal finance)
+
+    -   Quant training
+
+-   **Favorite**
+
+    -   🎾 Playing a tennis & football ⚽
+
+    -   I am always a Milanista ![](images/c/millan.png){width="30" height="17"}
+
+    -   Academic, History & Existentialist literature.
+
+    -   Movie, Quentin tarantino & Christopher nolan
+
+# **Education and training** 
+
+-   Big data professional Training course
+
+-   [Data designer Training course](https://www.slideshare.net/neuroassociates/1-50338144)
+
+-   [Shinhancard bigdata Academic Mentoring](https://www.shinhancardblog.com/62)
+
+-   Fast campus machine learning camp
+
+-   Catholic university of korea
 
     -   Bachelor of Arts and Business Administration (GPA 3.84/4.50)
 
     -   Double major : Psychology & Business Administration
 
+-   Award & Scholarship
+
     -   Scholarship : Academic scholarship : 2011, 2012, 2015
 
--   **Big Data Professional Training Course, 2015**
+    -   1st prize : Shinhan Card & LG Best Shop collaborative marketing strategy competition
 
--   [**Data Designer Training Course, 2015**](https://www.facebook.com/groups/1522061444735903)
+# **Work experience** 
 
-    -   [Retrospect : Ending the 1st Data Designer by Yeowoon Bae](https://www.slideshare.net/neuroassociates/1-50338144)
+### Kurly
 
--   [**Shinhancard bigdata Academic Mentoring, 2014**](https://www.shinhancardblog.com/62)
+-   Advanced analytics Team. CEO Office Division
 
-    -   1st prize : Shinhancard & LG Best shop joint marketing strategy contest
+    -   Team management
 
-# **Work experience**
+    -   Leading a,
 
-**Military service**,
+        -   Data product
 
--   Seoul Metropolitan Police Agency (2012-12-27 \~ 2014-09-26)
+        -   Analytics infra
 
-    -   [202 Presidential mobile police guards 713 combat police (Seoul, Jongro-gu)](https://namu.wiki/w/202%EA%B2%BD%EB%B9%84%EB%8B%A8){style="color : blue;"}
+        -   Data governance
+
+    -   Development a
+
+        -   Operation optimazation
+
+### [**bit-consulting, Analyst (2016)**](http://www.consulting-bit.com/)
+
+-   Welcome savings bank, CRM program consulting
+
+    -   Analyzed variables for the development of customer loyalty algorithm
+
+    -   Developed dashboard for marketing and customer value index metrics manual
+
+-   Client : KT&G : Brand portfolio projecgt
+
+    -   Brand portfolio strategy consulting
+
+    -   Executed sales analysis and brand analysis and qualitative analysis as a FGI assistant moderator Processed survey data
+
+### **Military service**,
+
+-   Seoul Metropolitan Police Agency (2012.12.27 \~ 2014.09.26)
+
+    -   [**202 Presidential mobile police guards 713 combat police (Seoul, Jongro-gu)**](https://namu.wiki/w/202%EA%B2%BD%EB%B9%84%EB%8B%A8)
 
     -   Served and discharged from sergeant
